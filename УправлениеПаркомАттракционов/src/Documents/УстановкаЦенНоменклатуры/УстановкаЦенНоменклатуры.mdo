@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="beccdfec-3ee1-4d3b-883b-89cf918faa5e">
+  <producedTypes>
+    <objectType typeId="c6f2f642-dd88-4bf5-a5e7-2009bb09eae8" valueTypeId="9bfc893a-7f9c-49ab-92fe-42f0482c1e87"/>
+    <refType typeId="1185e529-ee77-4db7-b457-cbf5af16c5fc" valueTypeId="203bec97-7f90-4114-8500-74c5638c66c3"/>
+    <selectionType typeId="3870cb45-8181-4110-aa46-3873d7a22767" valueTypeId="25cea5b1-7900-4bf7-94cf-7ce2ec0127c6"/>
+    <listType typeId="a8e3d64d-a026-4ac1-bfda-080a9c8da91d" valueTypeId="eeec1a52-c4f8-43a3-9175-27f5be25004a"/>
+    <managerType typeId="c3efba1a-b555-4fc2-aaaa-ad1fd513b7af" valueTypeId="efaa9cb7-e18f-4a24-979f-c38e010a626b"/>
+  </producedTypes>
+  <name>УстановкаЦенНоменклатуры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Установка цен номенклатуры</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.УстановкаЦенНоменклатуры.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.УстановкаЦенНоменклатуры.Form.ФормаДокумента</defaultObjectForm>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecords>InformationRegister.ЦеныНоменклатуры</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="c8dc41fd-90c2-4db1-9e1a-519713709924">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="bf3fde63-b9a8-439d-ae46-413a98a3f905">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="e394230e-e53e-4f00-9c6a-bb1980bb78b3">
+    <producedTypes>
+      <objectType typeId="02da9838-9987-47ed-92a5-25aec5c74795" valueTypeId="6470af78-0af5-41ce-b719-14a95bdd4c93"/>
+      <rowType typeId="d0026f25-5e64-4160-afea-b8c1801de312" valueTypeId="5bd8e072-07c0-4d07-a288-6bf936f6b1b7"/>
+    </producedTypes>
+    <name>ЦеныНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цены номенклатуры</value>
+    </synonym>
+    <attributes uuid="70b02ac1-c1d6-4ab0-9b82-1517f1b8f873">
+      <name>Номенклатура</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d4009d2d-623f-4f55-8653-70923bb4be62">
+      <name>Цена</name>
+      <synonym>
+        <key>ru</key>
+        <value>Цена</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

@@ -14,7 +14,6 @@
     <value>Активные посещения</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
-  <defaultListForm>AccumulationRegister.АктивныеПосещения.Form.ФормаСписка</defaultListForm>
   <dataLockControlMode>Managed</dataLockControlMode>
   <enableTotalsSplitting>true</enableTotalsSplitting>
   <resources uuid="1342cbd5-5518-4aa9-944b-4f3631916a8a">
@@ -48,26 +47,17 @@
     <useInTotals>true</useInTotals>
   </dimensions>
   <dimensions uuid="235815b1-6eb3-4f04-8ebf-fb296bc04de3">
-    <name>Аттракцион</name>
+    <name>ВидАттракциона</name>
     <synonym>
       <key>ru</key>
-      <value>Аттракцион</value>
+      <value>Вид аттракциона</value>
     </synonym>
     <type>
-      <types>CatalogRef.Аттракционы</types>
+      <types>CatalogRef.ВидыАттракционов</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <useInTotals>true</useInTotals>
   </dimensions>
-  <forms uuid="a40c3869-d194-49b0-993a-3eb4a0828f36">
-    <name>ФормаСписка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма списка</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
 </mdclass:AccumulationRegister>
